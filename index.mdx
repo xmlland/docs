@@ -1,56 +1,61 @@
 ---
 title: "平台介绍"
-description: "Welcome to the new home for your documentation"
+description: "OpenJee是一个面向企业级应用开发的​​低代码/快速开发平台​​。其核心使命是显著降低Java企业级Web应用的开发门槛、复杂度和时间成本。它通过​​可视化配置​​为主、​​代码扩展​​为辅的方式，将常见的企业应用功能抽象为可复用的组件与模型，使开发者能聚焦于核心业务逻辑的创新，而非重复的基础代码编写，从而快速响应业务变化，助力企业数字化转型 。"
 ---
 
-## Setting up
+## 核心特性
 
-Get your documentation site up and running in minutes.
+既能享受低代码10分钟配置出用户/机构管理等基础模块的高效，又能凭借优雅的扩展机制，轻松应对实时数仓、复杂工作流、数据权限等严峻的企业级挑战。
 
-<Card title="Start here" icon="rocket" horizontal href="/quickstart">
-  Follow our three step quickstart guide.
-</Card>
+| **特性维度**    | **传统Java低代码框架**                                        | **OpenJee 开源平台**                                        |
+| :---------- | :----------------------------------------------------- | :------------------------------------------------------ |
+| **后端架构**    | 代码生成器模式：每张表生成独立Entity、Controller、Service、Mapper，代码量庞大。 | 统一接口 + 钩子扩展：单一实体、Controller、Service、Dao处理所有表的CRUD，结构极简。 |
+| **前端界面**    | 生成代码可能复杂或定制性差，或动态渲染UI僵化。                               | 生成可读性高的Vue3代码：保留代码生成优势，便于深度定制和优雅扩展。                     |
+| **扩展方式**    | 修改生成代码或使用有限插件，复杂需求下低代码优势减弱。                            | Around（环绕）钩子：通过实现特定钩子接口，以AOP方式非侵入式注入复杂业务逻辑，保持核心简洁。      |
+| **透明度与可控性** | 生成代码可见，但底层引擎可能封闭。                                      | 开源 & 可单步调试：无晦涩解释引擎，所有操作可跟踪调试，开发者拥有完全控制权。                |
 
-## Make it yours
+## 强劲的技术基石
 
-Design a docs site that looks great and empowers your users.
+构建于成熟、高性能的企业级技术栈之上，确保平台的稳定与可靠。
 
 <Columns cols={2}>
-  <Card title="Edit locally" icon="pen-to-square" href="/development">
-    Edit your docs locally and preview them in real time.
+  <Card title="后端框架" icon="layer-group">
+    Spring Boot，SpringCloud
   </Card>
-  <Card title="Customize your site" icon="palette" href="/essentials/settings">
-    Customize the design and colors of your site to match your brand.
+  <Card title="前端框架" icon="code-simple">
+    Vue 3，Ant Design
   </Card>
-  <Card title="Set up navigation" icon="map" href="/essentials/navigation">
-    Organize your docs to help users find what they need and succeed with your product.
+  <Card title="持久层" icon="database">
+    Mybatis-plus
   </Card>
-  <Card title="API documentation" icon="terminal" href="/api-reference/introduction">
-    Auto-generate API documentation from OpenAPI specifications.
+  <Card title="安全认证" icon="bolt-auto">
+    Shiro，JWT，OAuth2
   </Card>
 </Columns>
 
-## Create beautiful pages
+## **开箱即用的企业级功能**
 
-Everything you need to create world-class documentation.
+平台已内置大量企业应用常见功能，助您快速启航：
 
 <Columns cols={2}>
-  <Card title="Write with MDX" icon="pen-fancy" href="/essentials/markdown">
-    Use MDX to style your docs pages.
+  <Card title="流程与协同" icon="badge-check">
+    - • 工作流引擎
+    - • 综合办公
+    - • 在线文档编辑预览
   </Card>
-  <Card title="Code samples" icon="code" href="/essentials/code">
-    Add sample code to demonstrate how to use your product.
+  <Card title="数据分析与展现" icon="badge-check">
+    - • 在线报表
+    - • 大屏设计
+    - • 实时数仓
   </Card>
-  <Card title="Images" icon="image" href="/essentials/images">
-    Display images and other media.
+  <Card title="集成与连接" icon="badge-check" href="/essentials/images">
+    - • 微信小程序接口
+    - • 单点登录
+    - • 定时任务
   </Card>
-  <Card title="Reusable snippets" icon="recycle" href="/essentials/reusable-snippets">
-    Write once and reuse across your docs.
+  <Card title="高阶安全" icon="badge-check">
+    - • 数据完整性保护
+    - • 用户和数据密级
+    - • 三员分立（满足安全测评要求）
   </Card>
 </Columns>
-
-## Need inspiration?
-
-<Card title="See complete examples" icon="stars" href="https://mintlify.com/customers">
-  Browse our showcase of exceptional documentation sites.
-</Card>
