@@ -18,15 +18,21 @@ description: "本文档将指导您如何快速配置一个完整的IT支持工�
   <Accordion title="表单设计">
     输入表单信息，表名：**demo_ticket**，备注：**工单**，模块：**demo**，类型：**列表**，排序：**100**，留痕：**否**。
 
-    点击”**快速创建-OpenAI**“，通过输入表单名称（名称用空格分隔），调用后端AI接口辅助创建表单元素（即数据库字段），其中工单状态status的java配置属性名称是固定的**status**，将其拖到表单隐藏区域。
+    点击”**快速创建-OpenAI**“，通过输入字段中文名称（名称用空格分隔），调用后端AI接口辅助创建表单元素（即数据库字段），其中工单状态status的java配置属性名称是固定的**status**，将其拖到表单隐藏区域。
 
     ![](./images/quickstart/step12_formdesign.gif)
   </Accordion>
   <Accordion title="列表设计">
-    
+    在"列表设计"标签页，选择需要组合查询的字段，是否查询选择”是“，查询类型文本一般选择Like支持模糊查询，日期范围选择Between。然后点击”同步字段title“按钮完成设置。
+
+    下半部分是列表页效果预览，并不能直接操作数据。
+
+    ![](./images/quickstart/step13_listdesign.gif)
   </Accordion>
   <Accordion title="列表页配置">
-    
+    在”列表页配置“标签页，操作区域，按钮，选择是否支持”导入数据“和”导出数据“。
+
+    ![](./images/quickstart/step14_listsetting.png)
   </Accordion>
 </AccordionGroup>
 
