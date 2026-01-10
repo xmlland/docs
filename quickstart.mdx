@@ -10,26 +10,26 @@ description: "本文档将指导您如何快速配置一个完整的IT支持工�
 ### Step 1: 配置表单和数据库
 
 <AccordionGroup>
-  <Accordion title="进入表单管理页面">
+  <Accordion title="1. 进入表单管理页面">
     用开发超管admin登录进入系统，通过菜单”表单管理“进入列表页，过滤出模块名称是demo的表单，点”添加“按钮开启一个新的表单设计。
 
-    ![](./images/quickstart/step11_enter_formdesign.gif)
+    ![](/step21_addmodel.png)
   </Accordion>
-  <Accordion title="表单设计">
+  <Accordion title="2. 表单设计">
     输入表单信息，表名：**demo_ticket**，备注：**工单**，模块：**demo**，类型：**列表**，排序：**100**，留痕：**否**。
 
     点击”**快速创建-OpenAI**“，通过输入字段中文名称（名称用空格分隔），调用后端AI接口辅助创建表单元素（即数据库字段），其中工单状态status的java配置属性名称是固定的**status**，将其拖到表单隐藏区域。
 
     ![](./images/quickstart/step12_formdesign.gif)
   </Accordion>
-  <Accordion title="列表设计">
+  <Accordion title="3. 列表设计">
     在"列表设计"标签页，选择需要组合查询的字段，是否查询选择”是“，查询类型文本一般选择Like支持模糊查询，日期范围选择Between。然后点击”同步字段title“按钮完成设置。
 
     下半部分是列表页效果预览，并不能直接操作数据。
 
     ![](./images/quickstart/step13_listdesign.gif)
   </Accordion>
-  <Accordion title="列表页配置">
+  <Accordion title="4. 列表页配置">
     在”列表页配置“标签页，操作区域，按钮，选择是否支持”导入数据“和”导出数据“。
 
     ![](./images/quickstart/step14_listsetting.png)
@@ -39,30 +39,28 @@ description: "本文档将指导您如何快速配置一个完整的IT支持工�
 ### Step 2: 设计工作流
 
 <AccordionGroup>
-  <Accordion title="进入模型管理页面">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
+  <Accordion title="1. 添加工作流模型">
+    通过菜单”流程中心\\模型管理“进入列表页，点”添加“按钮，选择或新建流程分类，输入模型名称，这里的流程分类和模型名称都是“工单处理”。
 
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
+    ![](./images/quickstart/step21_addmodel.png)
   </Accordion>
-  <Accordion title="添加模型">
-    For a first change, let's update the name and colors of your docs site.
+  <Accordion title="2. 设计工作流模型，关联表单">
+    在“模型管理”列表页，点“设计”操作链接进入设计页面，如下图：
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+    ![](./images/quickstart/step22_design_model.png)
 
-    <Tip>
-      Try changing the primary color to see an immediate difference!
-    </Tip>
+    创建流程节点和条件分支：
+
+    ![](./images/quickstart/step22_degin_model.gif)
+
+    重新返回表单设计页面，流程选择刚刚创建的“工单处理”工作流模型：
+
+    ![](./images/quickstart/step22_acc_formandmodel.png)
   </Accordion>
-  <Accordion title="设计流程模型">
+  <Accordion title="3. 节点权限配置">
     
   </Accordion>
-  <Accordion title="节点权限配置">
-    
-  </Accordion>
-  <Accordion title="部署模型">
+  <Accordion title="4. 部署模型">
     
   </Accordion>
 </AccordionGroup>
@@ -87,28 +85,3 @@ description: "本文档将指导您如何快速配置一个完整的IT支持工�
     
   </Accordion>
 </AccordionGroup>
-
-## 注意事项
-
-Now that you have your docs running, explore these key features:
-
-<CardGroup cols={2}>
-  <Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-    Learn MDX syntax and start writing your documentation.
-  </Card>
-  <Card title="Customize style" icon="palette" href="/essentials/settings">
-    Make your docs match your brand perfectly.
-  </Card>
-  <Card title="Add code examples" icon="square-code" href="/essentials/code">
-    Include syntax-highlighted code blocks.
-  </Card>
-  <Card title="API documentation" icon="code" href="/api-reference/introduction">
-    Auto-generate API docs from OpenAPI specs.
-  </Card>
-</CardGroup>
-
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-
-  ![Hero Light Png+ Existing In Indexed Db Mintlif](/images/hero-light.png+_existingInIndexedDbMintlify)
-</Note>
