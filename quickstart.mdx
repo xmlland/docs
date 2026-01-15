@@ -13,7 +13,7 @@ description: "本文档将指导您如何快速配置一个完整的IT支持工�
   <Accordion title="1. 进入表单管理页面">
     用开发超管admin登录进入系统，通过菜单”表单管理“进入列表页，过滤出模块名称是demo的表单，点”添加“按钮开启一个新的表单设计。
 
-    ![](/step21_addmodel.png)
+    ![](./images/quickstart/step11_enter_formdesign.gif)
   </Accordion>
   <Accordion title="2. 表单设计">
     输入表单信息，表名：**demo_ticket**，备注：**工单**，模块：**demo**，类型：**列表**，排序：**100**，留痕：**否**。
@@ -58,30 +58,43 @@ description: "本文档将指导您如何快速配置一个完整的IT支持工�
     ![](./images/quickstart/step22_acc_formandmodel.png)
   </Accordion>
   <Accordion title="3. 节点权限配置">
-    
+    选中流程节点，点击右侧的代理和权限：权限配置，进入节点权限配置弹窗页面，配置人员范围和规则权限。
+
+    创建工单节点，人员范围选择相对角色中的“发起者”；规则权限控制该节点表单元素是否可见、是否可编辑、是否必填，表单按钮选项控制该节点用户是否可以暂存、回退、终止流程，如下图所示：
+
+    ![](./images/quickstart/step23_01.png)
+
+    ![](./images/quickstart/step23_02.png)
+
+    ![](./images/quickstart/step23_03.png)
+
+    依次配置其他节点的人员范围和规则权限。
+
+    条件分支，流转方式选择Automatic自动，高级条件（变量）填写表单Java属性名称，高级条件（常量）填写数值，高级条件（运算）填写逻辑运算符，比如：等于。
+
+    条件分支根据表单值控制流程走向。
   </Accordion>
   <Accordion title="4. 部署模型">
-    
+    在模型管理列表页的操作列，点击“部署”链接部署模型。
+
+    ![](./images/quickstart/step24_deploy_model.png)
   </Accordion>
 </AccordionGroup>
 
 ### Step 3: 配置权限和菜单
 
 <AccordionGroup>
-  <Accordion title="发布表单">
+  <Accordion title="1. 发布表单">
     1. Commit and push your changes.
     2. Your docs will update and be live in moments!
   </Accordion>
-  <Accordion title="创建数据库表">
+  <Accordion title="2. 创建数据库表">
     
   </Accordion>
-  <Accordion title="创建菜单">
+  <Accordion title="3. 创建菜单">
     
   </Accordion>
-  <Accordion title="配置角色和权限">
-    
-  </Accordion>
-  <Accordion title="测试功能">
+  <Accordion title="4. 配置角色和权限">
     
   </Accordion>
 </AccordionGroup>
