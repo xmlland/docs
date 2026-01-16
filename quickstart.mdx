@@ -5,7 +5,11 @@ description: "本文档将指导您如何快速配置一个完整的IT支持工�
 
 ## 整个过程主要分为三个步骤
 
-配置表单与数据库、设计工作流、配置权限与菜单。
+配置表单与数据库、设计工作流、配置权限与菜单。实现“客户”创建工单和用户确认，“IT运维主管”分派工单，“运维人员”处理工单的业务流程。
+
+![](./images/quickstart/view_workflow.png)
+
+![](./images/quickstart/view_list.png)
 
 ### Step 1: 配置表单和数据库
 
@@ -85,16 +89,27 @@ description: "本文档将指导您如何快速配置一个完整的IT支持工�
 
 <AccordionGroup>
   <Accordion title="1. 发布表单">
-    1. Commit and push your changes.
-    2. Your docs will update and be live in moments!
+    在表单管理列表页选择要发布的表单，点击“发布”按钮发布。
+
+    ![](./images/quickstart/step31_release_form.png)
   </Accordion>
   <Accordion title="2. 创建数据库表">
-    
+    在表单管理列表页的操作列，点击“重建库”创建数据库表，表已存在数据时点击“同步表”增量修改数据库表。
+
+    ![](./images/quickstart/step32_create_table.png)
   </Accordion>
   <Accordion title="3. 创建菜单">
-    
+    在表单设计页面，右下方“创建菜单”，弹窗中选择上级菜单，输入链接（这里是/demo/demo_ticket/list），选择创建流程菜单。
+
+    ![](./images/quickstart/step33_create_menu.png)
   </Accordion>
   <Accordion title="4. 配置角色和权限">
-    
+    在角色管理列表页的操作列，点击“权限设置”打开菜单权限设置页面。
+
+    ![](./images/quickstart/step34_role_list.png)
+
+    选择该角色对应的菜单权限，这里客户角色对应创建工单和用户确认，运维人员对应处理工单，IT运维主管对应分派工单。
+
+    ![](./images/quickstart/step34_role_menu.png)
   </Accordion>
 </AccordionGroup>
